@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5DC26A"
+    android:textColor="#E7E4E4"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#E7E4E4"
+        android:layout_marginTop="28dp"
+        android:textSize="20dp"
+        android:text="CHEQUEO DE MAPA MuUNDIAL"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/editLatitud"
+                android:layout_width="364dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="#F6F6F6"
+                android:gravity="center"
+                android:hint="Ingrese su Latitud"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="#AAC5D8"
+                android:textSize="18dp">
+
+            </EditText>
+
+        </TableRow>
+
+
+
+        <TableRow>
+
+            <EditText
+                android:id="@+id/editLongitud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="#F6F6F6"
+                android:gravity="center"
+                android:hint="Ingrese su Longitud"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="#AAC5D8"
+                android:textSize="18dp"></EditText>
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btnGuardarBuscarDatos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="#F88110"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="Guardar y Buscar"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textTituloII"
+                android:background="#5DC26A"
+                android:textColor="#E7E4E4"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:textSize="23dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="¿Quieres ver lo puntos buscados?" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btnVer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="#F88110"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="Ver datos Guardados"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp" />
+
+        </TableRow>
+
+
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
